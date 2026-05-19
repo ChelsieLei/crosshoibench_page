@@ -167,9 +167,9 @@
       <div class="column is-full-width">
         <h2 class="title is-3">Pipeline</h2>
         <div class="content has-text-justified">
-           <p>
-           Overview of our proposed pipeline.
-          </p>
+           <!-- <p> -->
+           <!-- Overview of our proposed pipeline.
+          </p> -->
            <div class="content has-text-centered">
         <img src="./imgs/construct.jpg" alt="Framework overview" style="width:100%; max-width:800px; margin-bottom: 30px;">
         </div>
@@ -193,9 +193,9 @@
       <div class="column is-full-width">
         <h2 class="title is-3">Benchmark QuestionExample</h2>
         <div class="content has-text-justified">
-           <p>
-           Overview of our proposed pipeline.
-          </p>
+           <!-- <p>
+           Example questions in our benchmark under the three evaluation setting
+          </p> -->
            <div class="content has-text-centered">
         <img src="./imgs/example.png" alt="Framework overview" style="width:100%; max-width:800px; margin-bottom: 30px;">
         </div>
@@ -227,7 +227,7 @@
         <div class="content has-text-justified">
           <p>
             Illustration of VLM (Qwen2.5-VL-32B) failure cases in Setting 1, and red HOI classes refer to missing ground-truth interactions or incorrect predictions.
-            The VLM mainly suffers from incomplete multi-action recognition and cross-person HOI misattribution.
+            The VLM mainly suffers from (a) incomplete multi-action recognition, (b) cross-person HOI misattribution, (c) HOI similarity confusion and (d) hallucination.
           </p>
         </div>
         <div class="content has-text-centered">
@@ -240,17 +240,20 @@
         <h3 class="title is-4">Quantitative Results</h3>
         <div class="content has-text-justified">
           <p>
-            Here are critical experiment results in three evaluation settings.
+            Here are critical experiment results in three evaluation settings. 
+            Setting1: HOI detection, where the model needs to detect all HOIs in the image. 
+            Setting2: Localized HOI recognition, where the model needs to recognize HOIs for a specific person. 
+            Setting3: HOI recognition, where the model needs to recognize all HOIs in the image without localization.
           </p>
         </div>
         <div class="content has-text-centered">
-          <img src="./imgs/setting1.png" alt="Setting 1 Quantitative Results: HOI Detection" style="width:80%; max-width:800px; margin-bottom: 30px;">
+          <img src="./imgs/setting1.png" alt="Setting 1 Quantitative Results: HOI Detection" style="width:90%; max-width:800px; margin-bottom: 30px;">
         </div>
         <div class="content has-text-centered">
-          <img src="./imgs/setting2.png" alt="Setting 2 Quantitative Results: Localized HOI Recognition" style="width:80%; max-width:800px; margin-bottom: 30px;">
+          <img src="./imgs/setting2.png" alt="Setting 2 Quantitative Results: Localized HOI Recognition" style="width:90%; max-width:800px; margin-bottom: 30px;">
         </div>
         <div class="content has-text-centered">
-          <img src="./imgs/setting3.png" alt="Setting 3 Quantitative Results: HOI Recognition" style="width:80%; max-width:800px; margin-bottom: 30px;">
+          <img src="./imgs/setting3.png" alt="Setting 3 Quantitative Results: HOI Recognition" style="width:90%; max-width:800px; margin-bottom: 30px;">
         </div>
         <!--/ Re-rendering. -->
 
